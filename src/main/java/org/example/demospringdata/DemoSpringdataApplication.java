@@ -31,8 +31,8 @@ public class DemoSpringdataApplication {
             produitRepository.save(p2);
             produitRepository.save(p3);
 
-            List<Produit> products = produitRepository.findAll();
-            products.forEach(p->{
+            List<Produit> produits = produitRepository.findAll();
+            produits.forEach(p->{
                 System.out.println(p.toString());
             });
         };
